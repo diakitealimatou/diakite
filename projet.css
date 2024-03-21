@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-image: url(abstract-background-with-smooth-flowing-curves.jpg);
+    background-size: cover;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(185, 22, 22, 0.708) 
+}
+.titre {
+    font-family:'Times New Roman', Times, serif ;
+font-style: italic;
+font-size: 20px;
+}
+.titre span{
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+}
+nav ul li {
+    margin: 5px;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+.contenair h1{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.contenair h1 span{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: maroon;
+
+}
+.contenair p{
+    font-size: 35px;
+    text-align: center;
+
+}
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    position: relative;
+    margin: 0 auto;
+    row-gap: 30px;
+    justify-items: center;
+}
+.grids .grid{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    border: 5px solid maroon;
+   
+    
+}
+.grids .grid1{
+    background-size: cover;
+    background-image: url(téléchargement.jpg);
+}
+.grids .grid2{
+    background-size: cover;
+    background-image: url(téléchargement\ \(1\).jpg);
+}
+.grids .grid3{
+    background-size: cover;
+    background-image: url(téléchargement\ \(2\).jpg);
+}
+.grids .grid4{
+    background-size: cover;
+    background-image: url(thumbnail_800x480px-120778.jpg);
+}
+.grids .grid5{
+    background-size: cover;
+    background-image: url(1f2a0ce0-quel-ordinateur-portable-pc-et-apple-macbook-choisir__1200_630__overflow.jpeg);
+}
+.grids .grid6{
+    background-image: url(concept-controle-qualite-standard-m.jpg);
+    background-size: cover;
+}
+/*Partie tablette*/
+@media screen and ( max-width :900px) {
+    nav ul li {
+        margin: 5px;
+    }
+    nav ul li a {
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .contenair h1{
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+    }
+    .contenair h1 span{
+        font-size: 50px;
+        font-style: italic;
+        text-align: center;
+        color: maroon;
+    
+    }
+    .contenair p{
+        font-size: 30px;
+        text-align: center;
+    
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        position: relative;
+        margin: 0 auto;
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .grids .grid{
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+        border: 5px solid maroon;
+       
+        
+    }
+    .grids .grid1{
+        background-size: cover;
+        background-image: url(téléchargement.jpg);
+    }
+    .grids .grid2{
+        background-size: cover;
+        background-image: url(téléchargement\ \(1\).jpg);
+    }
+    .grids .grid3{
+        background-size: cover;
+        background-image: url(téléchargement\ \(2\).jpg);
+    }
+    .grids .grid4{
+        background-size: cover;
+        background-image: url(thumbnail_800x480px-120778.jpg);
+    }
+    .grids .grid5{
+        background-size: cover;
+        background-image: url(1f2a0ce0-quel-ordinateur-portable-pc-et-apple-macbook-choisir__1200_630__overflow.jpeg);
+    }
+    .grids .grid6{
+        background-image: url(concept-controle-qualite-standard-m.jpg);
+        background-size: cover;
+}
+ }
+ @media screen and ( max-width :500px){
+    nav ul li {
+        margin: 5px;
+    }
+    nav ul li a {
+        color:white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .contenair h1{
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+    }
+    .contenair h1 span{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        color: maroon;
+    
+    }
+    .contenair p{
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    .grids{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        position: relative;
+        margin: 0 auto;
+        row-gap: 15px;
+        justify-items: center;
+    }
+    .grids .grid{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        border: 5px solid maroon;
+       
+        
+    }
+    .grids .grid1{
+        background-size: cover;
+        background-image: url(téléchargement.jpg);
+    }
+    .grids .grid2{
+        background-size: cover;
+        background-image: url(téléchargement\ \(1\).jpg);
+    }
+    .grids .grid3{
+        background-size: cover;
+        background-image: url(téléchargement\ \(2\).jpg);
+    }
+    .grids .grid4{
+        background-size: cover;
+        background-image: url(thumbnail_800x480px-120778.jpg);
+    }
+    .grids .grid5{
+        background-size: cover;
+        background-image: url(1f2a0ce0-quel-ordinateur-portable-pc-et-apple-macbook-choisir__1200_630__overflow.jpeg);
+    }
+    .grids .grid6{
+        background-image: url(concept-controle-qualite-standard-m.jpg);
+        background-size: cover;
+}
+ }
+ 

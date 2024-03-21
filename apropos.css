@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-image: url(abstract-background-with-smooth-flowing-curves.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(185, 22, 22, 0.708) 
+}
+.titre {
+    font-family:'Times New Roman', Times, serif ;
+font-style: italic;
+font-size: 20px;
+}
+.titre span{
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+}
+nav ul li {
+    margin: 5px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+.contenu{
+    display: grid ;   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+}
+.contenu .partietext{
+    margin-left: 30px;   
+}
+.contenu .partietext h1{
+    font-size:70px ;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+}
+.contenu .partietext .paragraphe{
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    margin-right: 20px;
+}
+.contenu  p img{
+    width: 75%;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+}
+/*Partie tablette*/
+@media screen and ( max-width :900px) {
+    nav ul li {
+        margin: 5px;
+    }
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .contenu{
+        display: grid ;   
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
+    }
+    .contenu .partietext{
+        margin-left: 15px;   
+    }
+    .contenu .partietext h1{
+        font-size:30px ;
+        font-style: italic;
+        justify-content: center;
+        display: flex;
+        margin-right: 15px;
+    }
+    .contenu .partietext .paragraphe{
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        margin-right: 10px;
+    }
+    .contenu  p img{
+        width: 75%;
+        justify-content: center;
+        display: flex;
+        margin-right: 10px;
+    }
+}
+@media screen and ( max-width :500px){
+    nav ul li {
+        margin: 3px;
+    }
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 7px;
+    }
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .contenu{
+        display: grid ;   
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr; 
+    }
+    .contenu .partietext{
+        margin-left: 9px;   
+    }
+    .contenu .partietext h1{
+        font-size:20px ;
+        font-style: italic;
+        justify-content: center;
+        display: flex;
+        margin-right: 9px;
+    }
+    .contenu .partietext .paragraphe{
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        margin-right: 7px;
+    }
+    .contenu  p img{
+       display: none;
+       
+    }
+}
